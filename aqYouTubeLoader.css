@@ -1,0 +1,6 @@
+.aq-yt-player, .aq-yt-fallback, .aq-yt-loading { border: 1px solid #e5e5e5; margin: 0 auto;}
+.aq-yt-cont-progressive {font-size: 16px; margin: 0px auto; width: auto; height: 0px; padding: 0px; overflow: hidden; display: none;}
+.aq-yt-cont-fallback {font-size: 16px; margin: 0px auto; width: auto; height: auto; padding: 0px; overflow: hidden;}
+.aq-yt-cont-fallback .aq-yt-player {display: none;} 
+.aq-yt-cont-fallback .aq-yt-fallback {display: none; text-align: center;}
+.aq-yt-cont-fallback .aq-yt-loading {text-align: center;}

@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>YouTube Loader Demo</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- YouTube Loader Header Tags -->
+		<link rel="stylesheet" type="text/css" href="../../aqYouTubeLoader.css">
+		<script src="../../aqYouTubeLoader.js" ></script>
+		<!-- End YouTube Loader Header Tags -->
+		
+		<style>
+			html, body { height: 100%; }
+			body {
+				font-size: 16px;
+				font-family: 'Segoe UI', sans-serif;
+				padding: 0px;
+				margin: 0px;
+				background: #e5e5e5;
+			}
+			.container {
+				min-height: 100%;
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 0 0;
+				background: #fff;
+				box-shadow: #888 0px 0px 20px;
+			}
+			.page-content {
+				padding: 15px 30px;
+			}
+			h1, h2 {
+				font-weight: normal;
+			}
+			h2 {
+				margin-top: 0px;
+			}
+			a, a:visited { color: #364; }
+			a:hover { color: #08a85d; }
+			.aq-yt-player { width: 650px; height: 365px; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-content">
+				<h1>YouTube Progressive Enhancement</h1>
+				<p>This feature loads a YouTube video as a progressive enhancement feature. The video will only appear when the video successfully loads.</p>
+
+				<!-- Progressive player example -->
+				<div class="aq-yt-cont-progressive">
+					<div>
+						<!-- Content above video goes here -->
+						<h2>Cat Watching a Horror Video!</h2>
+						<!-- End content above video -->
+					</div>
+					<div class="aq-yt-player" id="_kgRFHaNo-Y"></div>
+					<div>
+						<!-- Content below video goes here -->
+						<p>Check out this cat watching the horror classic Psycho. The end will surprise you!</p>
+						<!-- End content below video -->
+					</div>
+				</div>
+				<!-- End fallback player example -->
+
+				<h1>YouTube Fallback</h1>
+				<p>This feature loads a YouTube video with fallback content. It will hold space in the layout until the video loads or fails by using loading content.</p>
+
+				<!-- Fallback player example -->
+				<div class="aq-yt-cont-fallback">
+					<div>
+						<!-- Content above video goes here -->
+						<h2>The difference between dogs and cats...</h2>
+						<!-- End content above video -->
+					</div>
+					<div class="aq-yt-player" id="Ht5dFBMgOGs"></div>
+					<div class="aq-yt-loading"><div style="margin-top: 40px">Loading</div></div>
+					<div class="aq-yt-fallback">
+						<!-- Your fallback content goes here -->
+						<div style="margin-top: 40px">Sorry. No YouTube for you... :-(</div>
+						<!-- End fallback content -->
+					</div>	
+					<div>
+						<!-- Content below video goes here -->
+						<p>Check out the difference between dogs and cats in this crazy video. The end will shock you!</p>
+						<!-- End content below video -->
+					</div>
+				</div>
+				<!-- End fallback player example -->
+			</div>
+		</div>
+	</body>
+</html>
